@@ -113,10 +113,7 @@
       { name: 'Sunshine Yellow', hex: '#FFD000' },
       { name: 'Hot Pink', hex: '#FF3D8C' },
     ];
-  
-  
-    // --- Svelte 5 State Management ---
-  
+
     // Use $state for variables whose *assignment* should trigger reactivity
     let activePalette = $state<ColorPalette>(colorPalettes[0]);
     let activeFontPair = $state<FontPair>(fontPairings[0]);
@@ -158,9 +155,7 @@
   
   </script>
   
-  <!-- Template (Markup) remains largely the same -->
-  <!-- It will automatically react to changes in `activePalette`, `activeFontPair`, and `colors` -->
-  
+
   <div class="flex flex-col items-center w-full bg-gray-50 p-6 space-y-8">
     <!-- Color Palette Switcher -->
     <div class="w-full p-4 bg-white rounded-lg shadow-md">
@@ -560,9 +555,7 @@
   </div>
   
   <style>
-    /* Import fonts */
-    /* Ensure fonts are loaded. If using SSR without specific font handling, */
-    /* consider conditional loading or preloading. */
+
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Abril+Fatface&family=Nunito:wght@400;600;700&display=swap');
   
     /* Add generic font fallbacks in style attributes for robustness */
