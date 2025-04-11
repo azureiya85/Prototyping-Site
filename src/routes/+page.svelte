@@ -52,10 +52,10 @@
         dark: '#121212', // Near black
         light: '#F7F7F2', // Off-white
         grayDark: '#252627', // Dark gray
-        grayLight: '#BCBCBC', // Light gray
+        grayLight: '#fce9eb', // Light gray
       },
       // Add more palettes here as needed, e.g.:
-      /*
+      
       {
         id: 'retro',
         name: 'Retro Palette',
@@ -65,9 +65,9 @@
         dark: '#1A1A1A',
         light: '#F9F9F9',
         grayDark: '#333333',
-        grayLight: '#D3D3D3',
+        grayLight: '#fce9eb',
       }
-      */
+     
     ];
   
     // Active color palette
