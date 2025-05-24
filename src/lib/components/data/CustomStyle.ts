@@ -28,7 +28,7 @@ export interface ColorPalette {
     900: string;
     950: string;
   };
-  accent: {
+  tertiary: {
     50: string;
     100: string;
     200: string;
@@ -76,7 +76,7 @@ export interface CustomTheme {
   customColors?: {
     primary?: string;
     secondary?: string;
-    accent?: string;
+    tertiary?: string;
     surface?: string;
   };
 }
@@ -112,7 +112,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#134e4a',
       950: '#042f2e'
     },
-    accent: {
+    tertiary: {
       50: '#fff1f2',
       100: '#ffe4e6',
       200: '#fecdd3',
@@ -168,7 +168,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#78350f',
       950: '#451a03'
     },
-    accent: {
+    tertiary: {
       50: '#fdf4ff',
       100: '#fae8ff',
       200: '#f5d0fe',
@@ -224,7 +224,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#1e3a8a',
       950: '#172554'
     },
-    accent: {
+    tertiary: {
       50: '#f0fdf4',
       100: '#dcfce7',
       200: '#bbf7d0',
@@ -280,7 +280,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#111827',
       950: '#030712'
     },
-    accent: {
+    tertiary: {
       50: '#eff6ff',
       100: '#dbeafe',
       200: '#bfdbfe',
@@ -336,7 +336,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#831843',
       950: '#500724'
     },
-    accent: {
+    tertiary: {
       50: '#fefce8',
       100: '#fef9c3',
       200: '#fef08a',
@@ -392,7 +392,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#365314',
       950: '#1a2e05'
     },
-    accent: {
+    tertiary: {
       50: '#fdf4ff',
       100: '#fae8ff',
       200: '#f5d0fe',
@@ -448,7 +448,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#7c2d12',
       950: '#431407'
     },
-    accent: {
+    tertiary: {
       50: '#fefce8',
       100: '#fef9c3',
       200: '#fef08a',
@@ -504,7 +504,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#6f2f20',
       950: '#3c1610'
     },
-    accent: {
+    tertiary: {
       50: '#fffbeb',
       100: '#fef3c7',
       200: '#fde68a',
@@ -560,7 +560,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#882b18',
       950: '#4a1208'
     },
-    accent: {
+    tertiary: {
       50: '#f0fdfa',
       100: '#cbfbf0',
       200: '#96f7e2',
@@ -616,7 +616,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#194f43',
       950: '#0a2d26'
     },
-    accent: {
+    tertiary: {
       50: '#fff9ed',
       100: '#fef0d4',
       200: '#fcdea8',
@@ -672,7 +672,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#78350f',
       950: '#451a03'
     },
-    accent: {
+    tertiary: {
       50: '#fff1f2',
       100: '#ffe4e6',
       200: '#fecdd3',
@@ -728,7 +728,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#831843',
       950: '#500724'
     },
-    accent: {
+    tertiary: {
       50: '#f7fee7',
       100: '#ecfccb',
       200: '#d9f99d',
@@ -784,7 +784,7 @@ export const defaultColorPalettes: ColorPalette[] = [
       900: '#333946',
       950: '#22252d'
     },
-    accent: {
+    tertiary: {
       50: '#fefce8',
       100: '#fef9c3',
       200: '#fef08a',
@@ -1187,11 +1187,11 @@ export function generateCSSVariables(theme: CustomTheme): string {
     vars.push(`--color-secondary-${shade}: ${color};`);
   });
   
-  // Accent colors
-  const accentColors = customColors?.accent ? 
-    generateColorShades(customColors.accent) : palette.accent;
-  Object.entries(accentColors).forEach(([shade, color]) => {
-    vars.push(`--color-accent-${shade}: ${color};`);
+  // tertiary colors
+  const tertiaryColors = customColors?.tertiary ? 
+    generateColorShades(customColors.tertiary) : palette.tertiary;
+  Object.entries(tertiaryColors).forEach(([shade, color]) => {
+    vars.push(`--color-tertiary-${shade}: ${color};`);
   });
   
   // Surface colors

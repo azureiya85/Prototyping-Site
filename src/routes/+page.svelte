@@ -9,8 +9,8 @@ import ThemePreview from '$lib/components/atoms/ThemePreview.svelte';
  
  // Theme state
    // Define the specific keys and an array of these keys
-  type ColorThemeKey = 'primary' | 'secondary' | 'accent' | 'surface';
-  const colorThemeKeys: readonly ColorThemeKey[] = ['primary', 'secondary', 'accent', 'surface'] as const;
+  type ColorThemeKey = 'primary' | 'secondary' | 'tertiary' | 'surface';
+  const colorThemeKeys: readonly ColorThemeKey[] = ['primary', 'secondary', 'tertiary', 'surface'] as const;
 
   // Theme state
   let currentTheme = $state<CustomTheme>({
@@ -27,7 +27,7 @@ import ThemePreview from '$lib/components/atoms/ThemePreview.svelte';
   let showColorPickers = $state({
     primary: false,
     secondary: false,
-    accent: false,
+    tertiary: false,
     surface: false
   });
 
@@ -149,7 +149,7 @@ const paginatedFontPairings = $derived.by(() => {
       <div class="flex justify-between items-center h-16">
         <div class="flex items-center space-x-4">
           <div class="flex items-center space-x-2">
-            <div class="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg"></div>
+            <div class="w-8 h-8 bg-gradient-to-br from-primary-500 to-tertiary-500 rounded-lg"></div>
             <h1 class="text-xl font-bold text-surface-900 dark:text-surface-100" 
                 style="font-family: '{currentTheme.fonts.heading.family}', sans-serif;">
               Prototype Designer
@@ -257,7 +257,7 @@ const paginatedFontPairings = $derived.by(() => {
                     <div class="flex space-x-1">
                       <div class="w-4 h-4 rounded-full" style="background-color: {palette.primary[500]};"></div>
                       <div class="w-4 h-4 rounded-full" style="background-color: {palette.secondary[500]};"></div>
-                      <div class="w-4 h-4 rounded-full" style="background-color: {palette.accent[500]};"></div>
+                      <div class="w-4 h-4 rounded-full" style="background-color: {palette.tertiary[500]};"></div>
                     </div>
                   </div>
                 </button>

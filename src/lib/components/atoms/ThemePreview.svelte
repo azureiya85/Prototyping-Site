@@ -52,7 +52,7 @@
 
 <div class="bg-white dark:bg-surface-800 rounded-xl shadow-sm border border-surface-200 dark:border-surface-700 overflow-hidden">
   <!-- Preview Header -->
-  <div class="bg-gradient-to-r from-primary-500 to-accent-500 p-6 text-white">
+  <div class="bg-gradient-to-r from-primary-500 to-tertiary-500 p-6 text-white">
     <h2 class="text-2xl font-bold mb-2" style="font-family: '{currentTheme.fonts.heading.family}', sans-serif;">
       Theme Preview
     </h2>
@@ -114,7 +114,7 @@
                     style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
               Learn More
             </button>
-            <button class="px-4 py-2 bg-accent-500 hover:bg-accent-600 text-white rounded-lg font-medium transition-colors shadow-sm"
+            <button class="px-4 py-2 bg-tertiary-500 hover:bg-tertiary-600 text-white rounded-lg font-medium transition-colors shadow-sm"
                     style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
               Special Action
             </button>
@@ -136,7 +136,7 @@
                     style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
               Ghost
             </button>
-            <button class="px-4 py-2 text-secondary-600 hover:text-primary-700 hover:border-b hover:border-primary-700 font-medium transition-colors"
+            <button class="px-4 py-2 text-tertiary-600 hover:text-tertiary-400 hover:border-b hover:border-tertiary-400 font-medium transition-colors"
                     style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
               Link Style
             </button>
@@ -206,7 +206,7 @@
                     style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
               Privacy Settings
             </button>
-            <button class="w-full px-3 py-2 text-left text-accent-600 hover:bg-accent-50 dark:hover:bg-accent-900 rounded-lg transition-colors text-sm"
+            <button class="w-full px-3 py-2 text-left text-tertiary-600 hover:bg-tertiary-50 dark:hover:bg-tertiary-900 rounded-lg transition-colors text-sm"
                     style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
               Upgrade Plan
             </button>
@@ -308,7 +308,7 @@
                  style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
                 Get help when you need it with our dedicated support team.
               </p>
-              <button class="px-4 py-2 bg-accent-500 hover:bg-accent-600 text-white rounded-lg font-medium transition-colors text-sm"
+              <button class="px-4 py-2 bg-tertiary-500 hover:bg-tertiary-600 text-white rounded-lg font-medium transition-colors text-sm"
                       style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
                 Contact Support
               </button>
@@ -532,7 +532,7 @@
                 style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
             Popular
           </span>
-          <span class="px-3 py-1 bg-accent-100 dark:bg-accent-900 text-accent-800 dark:text-accent-200 text-sm font-medium rounded-full"
+          <span class="px-3 py-1 bg-tertiary-100 dark:bg-tertiary-900 text-tertiary-800 dark:text-tertiary-200 text-sm font-medium rounded-full"
                 style="font-family: '{currentTheme.fonts.body.family}', sans-serif;">
             Featured
           </span>
